@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Anime Database"
+title:  "Manga Database"
 author: Aayush
 categories: [ Jekyll ]
 image: assets/images/1.jpg
