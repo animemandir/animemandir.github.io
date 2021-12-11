@@ -1,0 +1,75 @@
+# Site
+name: 'Warlords Website'
+description: 'Warlords official website for blog and project announcements.'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: 'warlords.github.io'
+disqus: ''
+email: ''
+mailchimp-list: ''
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-strapi
+  
+authors:
+    aayush:
+      name:           Aayush
+      site:           https://anime-mandir.blogspot.com
+      avatar:         /assets/images/avatar1.jpg
+      bio:            "Hi, I am Aayush S C, the Web Dev of Warlords."
+      email:          anidrivetest@gmail.com
+      twitter:        https://twitter.com/AayushSatish
+
+    riley:
+      name:           Ghost Riley
+      site:           https://ani-toons.blogspot.com
+      avatar:         /assets/images/avatar2.jpg
+      bio:            "Currect Leader of Warlords Network."
+      email:          fakemail@gmail.com
+      twitter:        https://instagram.com/izumi_weebx
+ 
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: aayush
+      avatar: /assets/images/avatar1.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 5
+
+# Strapi
+strapi:
+  # Your API endpoint (optional, default to http://localhost:1337)
+  endpoint: http://localhost:1337
+  collections:
+    project:
+      type: post
+
+    categories:
+      type: categories
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
