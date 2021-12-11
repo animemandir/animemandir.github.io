@@ -17,7 +17,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-strapi
   
 authors:
     aayush:
@@ -60,16 +59,6 @@ highlighter: rouge
 # Paginate
 paginate: 5
 
-# Strapi
-strapi:
-  # Your API endpoint (optional, default to http://localhost:1337)
-  endpoint: http://localhost:1337
-  collections:
-    project:
-      type: post
-
-    categories:
-      type: categories
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
