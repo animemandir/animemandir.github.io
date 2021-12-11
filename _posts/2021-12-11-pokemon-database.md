@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Anime Database"
+title:  "Pokemon Database"
 author: Aayush
 categories: [ Jekyll ]
 image: assets/images/6.jpg
